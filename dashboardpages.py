@@ -40,32 +40,32 @@ html, body, [data-testid="stAppViewContainer"]{
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="hub-title">📌 CIDB Dashboard Hub</div>', unsafe_allow_html=True)
-st.markdown('<div class="hub-sub">One page to access all your Streamlit dashboards.</div>', unsafe_allow_html=True)
+st.markdown('<div class="hub-title">Nabil Dashboard Hub</div>', unsafe_allow_html=True)
+
 
 dashboards = [
     {
         "title": "Dashboard Pendahuluan CIDB",
-        "desc": "Pendahuluan / monitoring (hubungan kepada proses kewangan).",
+        "desc": "Pendahuluan / Semakan Baki Pendahuluan Staf.",
         "tag": "Finance",
         "url": "https://dashboard-pendahuluancidb.streamlit.app/"
     },
     {
         "title": "Dashboard Aset (SAP vs Easset)",
-        "desc": "Semakan & reconciliation aset SAP vs Easset.",
+        "desc": "Penyesuaian aset SAP vs Easset & Senarai Pemilikan Aset",
         "tag": "Asset",
         "url": "https://dashboard-aset-sap-vs-easset.streamlit.app/"
     },
     {
         "title": "Tunggakan Pesanan Tempatan",
-        "desc": "Laporan tunggakan PO/PL & tindakan susulan PTJ.",
-        "tag": "Procurement",
+        "desc": "Laporan tunggakan PO semasa",
+        "tag": "Procurement/Closing Account",
         "url": "https://dashboard-tunggakan-pesanan-tempatan-cidb.streamlit.app/"
     },
     {
-        "title": "Senarai Pesanan Tempatan",
-        "desc": "Senarai pengeluaran pesanan tempatan (listing & semakan).",
-        "tag": "Listing",
+        "title": "Senarai Pesanan Tempatan Cawangan & Perlis",
+        "desc": "Senarai pengeluaran pesanan tempatan di setiap cawangan & Perlis untuk 3 tahun terkini.",
+        "tag": "Usul MBJ",
         "url": "https://senaraipesanantempatan.streamlit.app/"
     },
 ]
