@@ -2,7 +2,7 @@ import streamlit as st
 from pathlib import Path
 from base64 import b64encode
 
-st.set_page_config(page_title="CIDB Dashboard Hub", layout="wide")
+st.set_page_config(page_title="Nabil Dashboard Hub", layout="wide")
 
 # ---------- paths ----------
 BASE_DIR = Path(__file__).parent
@@ -56,8 +56,7 @@ def dashboard_card(tag: str, title: str, bullets: list[str], url: str, image_fil
         else:
             st.warning(f"Preview image not found: assets/{image_file}")
 
-    # Fallback button (still useful on mobile / accessibility)
-    st.link_button("🚀 Open dashboard", url, use_container_width=True)
+ 
 
 
 # ---------- CSS ----------
@@ -168,8 +167,7 @@ dashboards = [
     {
         "title": "Dashboard Pendahuluan CIDB",
         "bullets": [
-            "Ringkasan tunggakan pendahuluan diri & bekalan mengikut PTJ",
-            "Terus nampak baki & fokus tindakan"
+            "Tunggakan Pendahuluan Staf",
         ],
         "tag": "Finance",
         "url": "https://dashboard-pendahuluancidb.streamlit.app/",
@@ -178,8 +176,8 @@ dashboards = [
     {
         "title": "Dashboard Aset (SAP vs Easset)",
         "bullets": [
-            "Aset tidak sepadan antara SAP & Easset (missing / mismatch)",
-            "Semak isu lokasi & klasifikasi dengan cepat"
+            "Aset tidak sepadan antara SAP & Easset",
+            "Senarai pemilikan aset cidb malaysia"
         ],
         "tag": "Asset",
         "url": "https://dashboard-aset-sap-vs-easset.streamlit.app/",
@@ -189,7 +187,7 @@ dashboards = [
         "title": "Tunggakan Pesanan Tempatan",
         "bullets": [
             "Jumlah & nilai PO tertunggak (RM) terkini",
-            "Kenal pasti PTJ/vendor yang perlu tindakan"
+            "Mengenal pasti PTJ yang memerlukan tindakan"
         ],
         "tag": "Procurement / Closing",
         "url": "https://dashboard-tunggakan-pesanan-tempatan-cidb.streamlit.app/",
@@ -199,7 +197,7 @@ dashboards = [
         "title": "Senarai Pesanan Tempatan Cawangan & Perlis",
         "bullets": [
             "Trend pengeluaran PO ikut tahun (2023–2025)",
-            "Banding prestasi cawangan & Perlis dalam satu paparan"
+            "Perbandingan pengeluaran PO di Cawangan dan Perlis"
         ],
         "tag": "Usul MBJ",
         "url": "https://senaraipesanantempatan.streamlit.app/",
