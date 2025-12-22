@@ -227,4 +227,4 @@ for i, d in enumerate(dashboards):
         )
 
 st.markdown("---")
-st.caption("Tip: Share this hub link to PTJ. Replace images in /assets anytime to update previews.")
+
