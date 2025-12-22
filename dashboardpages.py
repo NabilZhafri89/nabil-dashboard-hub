@@ -159,8 +159,8 @@ html, body, [data-testid="stAppViewContainer"]{
 )
 
 # ---------- header ----------
-st.markdown('<div class="hub-title">CIDB Dashboard Hub</div>', unsafe_allow_html=True)
-st.markdown('<div class="hub-sub">Quick access to key dashboards (hover the preview to open).</div>', unsafe_allow_html=True)
+st.markdown('<div class="hub-title">Nabil Dashboard Hub</div>', unsafe_allow_html=True)
+
 
 # ---------- dashboard list ----------
 dashboards = [
