@@ -159,7 +159,7 @@ html, body, [data-testid="stAppViewContainer"]{
 )
 
 # ---------- header ----------
-st.markdown('<div class="hub-title">Nabil's Dashboard Hub</div>', unsafe_allow_html=True)
+st.markdown('<div class="hub-title">Nabil Dashboard Hub</div>', unsafe_allow_html=True)
 
 
 # ---------- dashboard list ----------
