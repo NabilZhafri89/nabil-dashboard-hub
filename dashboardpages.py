@@ -2,7 +2,7 @@ import streamlit as st
 from pathlib import Path
 from base64 import b64encode
 
-st.set_page_config(page_title="Nabil Dashboard Hub", layout="wide")
+st.set_page_config(page_title="Nabil's Dashboard Hub", layout="wide")
 
 # ---------- paths ----------
 BASE_DIR = Path(__file__).parent
